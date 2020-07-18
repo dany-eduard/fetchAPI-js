@@ -51,7 +51,7 @@ function cargarAPI() {
       let html = `<h1>picsum.photos</h1>`;
       data.forEach(function (item) {
         html += `
-          <li>${item.author} - <a href="${item.post_url}">Ver imagen</a> </li>
+          <li>${item.author} - <a href="${item.post_url}" target="_blank">Ver imagen</a> </li>
         `;
       });
       document.getElementById("resultado").innerHTML = html;
